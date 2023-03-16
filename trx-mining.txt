@@ -1,0 +1,27 @@
+termux commands:
+
+pkg update
+
+pkg upgrade 
+
+pkg install git
+
+pkg install wget
+
+pkg install proot
+
+git clone https://github.com/xmrig/xmrig
+
+cd xmrig
+
+mkdir build
+
+cd bulid  
+
+pkg install cmake
+
+cmake -DWITH_HWLOC=OFF ..
+
+make
+
+./xmrig -o rx.unmineable.com:3333 -a rx -k -u TRX:TUZsF6fkhQzA1UAsohgby4aagyfDNUmcLf
